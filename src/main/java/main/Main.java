@@ -12,9 +12,9 @@ import java.net.URL;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        URL url = new File("src/main/resources/fxml/qcl.fxml").toURI().toURL();
+        URL url = new File("src/main/resources/fxml/qclTest.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
-        stage.setTitle("qcl Application");
+        stage.setTitle("qclTest Application");
 
         Scene primaryScene = new Scene(root, 980, 1800);
         stage.setScene(primaryScene);
