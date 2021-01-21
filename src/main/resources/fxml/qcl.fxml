@@ -12,10 +12,17 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-<ListView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3480.0" prefWidth="756.0" styleClass="listviewBackground" stylesheets="@../asset/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<ListView fixedCellSize="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3287.0" prefWidth="756.0" styleClass="listviewBackground" stylesheets="@../asset/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
     <AnchorPane prefHeight="6000.0" prefWidth="744.0">
-
-        <FlowPane layoutX="372.0" layoutY="543.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <Label layoutX="180.0" layoutY="14.0" prefHeight="71.0" prefWidth="396.0" styleClass="backgroundTitle" stylesheets="@../asset/style.css" text="Présence et fixation des composants">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+         <font>
+            <Font size="20" />
+         </font>
+        </Label>
+        <FlowPane layoutX="372.0" layoutY="623.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="6">
                     <padding>
@@ -56,7 +63,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="372.0" layoutY="14.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="100.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="2">
                     <padding>
@@ -93,7 +100,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="372.0" layoutY="275.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="360.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="4">
                     <padding>
@@ -134,7 +141,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="372.0" layoutY="814.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="890.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="8">
                     <padding>
@@ -171,7 +178,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="814.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="890.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="7">
                     <padding>
@@ -208,7 +215,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="14.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="100.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="1">
                     <padding>
@@ -245,7 +252,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="372.0" layoutY="1068.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="1150.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="35.0" prefWidth="34.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="10">
                     <padding>
@@ -283,7 +290,7 @@
             </children>
         </FlowPane>
 
-        <FlowPane layoutX="22.0" layoutY="275.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="360.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="3">
                     <padding>
@@ -320,7 +327,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="1347.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="1433.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="35.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="11">
                     <padding>
@@ -357,7 +364,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="373.0" layoutY="1347.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="1433.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="35.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="12">
                     <padding>
@@ -394,7 +401,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="378.0" layoutY="1612.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="1698.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="14">
                     <padding>
@@ -431,7 +438,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="1612.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="1698.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="13">
                     <padding>
@@ -468,7 +475,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="378.0" layoutY="1880.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="1966.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="35.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="16">
                     <padding>
@@ -505,7 +512,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="1880.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="1966.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="35.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="15">
                     <padding>
@@ -542,7 +549,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="2154.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="2240.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="35.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="17">
                     <padding>
@@ -579,7 +586,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="378.0" layoutY="2154.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="2240.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="18">
                     <padding>
@@ -616,7 +623,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="2427.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="2513.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="19">
                     <padding>
@@ -653,7 +660,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="378.0" layoutY="2427.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="2513.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="20">
                     <padding>
@@ -690,7 +697,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="2697.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="2783.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="21">
                     <padding>
@@ -727,7 +734,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="378.0" layoutY="2697.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="372.0" layoutY="2783.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="33.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="22">
                     <padding>
@@ -764,7 +771,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="1068.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="1150.0" prefHeight="224.0" prefWidth="317.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="9">
                     <padding>
@@ -801,7 +808,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <FlowPane layoutX="22.0" layoutY="543.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
+        <FlowPane layoutX="22.0" layoutY="623.0" prefHeight="237.0" prefWidth="335.0" styleClass="borderTable" stylesheets="@../../../../../pejoProject/src/main/resources/date.css">
             <children>
                 <Label prefHeight="18.0" prefWidth="19.0" stylesheets="@../../../../../pejoProject/src/main/resources/date.css" text="5">
                     <padding>
@@ -842,20 +849,20 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <Button fx:id="compEnr" layoutX="22.0" layoutY="3006.0" mnemonicParsing="false" text="Enregistrer">
+        <Button fx:id="compEnr" layoutX="22.0" layoutY="3095.0" mnemonicParsing="false" stylesheets="@../asset/style.css" text="Enregistrer">
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </padding>
             <font>
-                <Font size="16.0" />
+                <Font size="18.0" />
             </font>
         </Button>
-        <Button fx:id="compValEnr" layoutX="540.0" layoutY="3005.0" mnemonicParsing="false" text="valider et enregistrer">
+        <Button fx:id="compValEnr" layoutX="507.0" layoutY="3095.0" mnemonicParsing="false" stylesheets="@../asset/style.css" text="Valider et enregistrer">
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </padding>
             <font>
-                <Font size="16.0" />
+                <Font size="18.0" />
             </font>
         </Button>
     </AnchorPane>
