@@ -1,0 +1,39 @@
+/*.listviewBackground {*/
+/*    background-color: #FFF;*/
+/*}*/
+.date {
+    /*-fx-border-color: #000;*/
+    /*-fx-padding: 10px 10px 10px 10px;*/
+}
+
+.suivant {
+    -fx-font-weight: 700;
+}
+
+.borderTable {
+    -fx-border-color: #000;
+    -fx-border-width: 2px;
+    fx-font-size: 15px;
+}
+
+.fontSize {
+    /*-fx-font-size: 4px;*/
+}
+
+.paddingText {
+    -fx-padding: 0 5px 5px;
+    text-align: center;
+}
+
+.listviewBackground {
+    -fx-background-color: #000;
+}
+.labelFix {
+    -fx-border-color: #000 ;
+    -fx-border-width: 2 ;
+    -fx-padding: 4px;
+    /*-fx-border-color: ;*/
+}
+.imgSize {
+    -fx-max-width: 331px;
+}
