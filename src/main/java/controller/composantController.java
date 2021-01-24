@@ -1,13 +1,18 @@
 package controller;
 
 import javafx.beans.binding.Bindings;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListCell;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -20,8 +25,9 @@ import java.util.ResourceBundle;
 
 public class composantController implements Initializable {
     private ArrayList<ComboBox> ArrayListCombo;
+    private String[] selectedItem = new String[22];
     @FXML
-    public ComboBox comp1;
+    private ComboBox comp1;
     ObservableList compo1 = FXCollections.observableArrayList("0", "OK", "M", "R");
 
     @FXML
@@ -88,6 +94,12 @@ public class composantController implements Initializable {
     private ComboBox comp22;
     ObservableList<String> compo22 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
 
+    @FXML
+    private Button compValEnr;
+
+    @FXML
+    private TextField showMessage;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         comp1.setItems(compo1);
@@ -97,6 +109,7 @@ public class composantController implements Initializable {
         comp5.setItems(compo5);
         comp6.setItems(compo6);
         comp7.setItems(compo7);
+        comp8.setItems(compo8);
         comp9.setItems(compo9);
         comp10.setItems(compo10);
         comp11.setItems(compo11);
@@ -115,6 +128,7 @@ public class composantController implements Initializable {
         for (ComboBox com : getArrayListCombo()) {
             generalComp(com);
         }
+        getSelectedValue();
     }
 
     public ArrayList<ComboBox> getArrayListCombo() {
@@ -213,6 +227,52 @@ public class composantController implements Initializable {
                 break;
         }
         return color;
+    }
+
+    /*
+     ** This Method get the selected Value from User and saved in an ArrayList
+     */
+    public String[] getSelectedValue() {
+        final String[] value = new String[22];
+        // get the Selected Item,which the User put it.
+        for (int i = 0; i < 22; i++) {
+            int finalI = i;
+            int finalI1 = i;
+            getArrayListCombo().get(i).getSelectionModel().selectedItemProperty()
+                    .addListener(new ChangeListener<String>() {
+                        public void changed(ObservableValue<? extends String> observable,
+                                            String oldValue, String newValue) {
+                            System.out.println(finalI + " Value is: " + newValue);
+                            value[finalI] = newValue;
+                            selectedItem[finalI] = newValue;
+                        }
+                    });
+        }
+
+        return selectedItem;
+    }
+
+    @FXML
+    public void ValidSave(ActionEvent event) throws Exception {
+        if (event.getSource() == compValEnr) {
+
+            if (isAllSelected()) {
+                showMessage.setText("oui tout est sélectionné");
+            } else {
+                showMessage.setText("Tout n'est pas sélectionné");
+            }
+        }
+    }
+
+    // check whether all of Values are selected
+    public Boolean isAllSelected() {
+        for (String arr : getSelectedValue()) {
+            if (arr == null || arr == "0") {
+                System.out.println("nulllll lll");
+                return false;
+            }
+        }
+        return true;
     }
 
 }

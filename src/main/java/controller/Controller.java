@@ -45,9 +45,6 @@ public class Controller implements Initializable {
 
             stage = (Stage) btn1.getScene().getWindow();
             stage.setTitle("Composant");
-//            fillCombo();
-//            stage.setScene();
-//            fillCombo();
             URL url = new File("src/main/resources/fxml/qcl.fxml").toURI().toURL();
             root = FXMLLoader.load(url);
 
