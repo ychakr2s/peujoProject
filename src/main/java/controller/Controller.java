@@ -17,15 +17,24 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-    @FXML
-    public ComboBox<String> comb;
-    ObservableList<String> list = FXCollections.observableArrayList("0", "OK", "M", "R");
-
-    //    @FXML
-//    void Select (ActionEvent event){
-//comb.setValue();   }
+    /*
+     ** This is located in First Page and when you click this Button goes to Composant.
+     */
     @FXML
     private Button btn1;
+
+
+    //    public ComboBox<String> comp1;
+
+
+    @FXML
+    public void fillCombo() {
+//        comp1.setItems(compo1);
+        System.out.println("salam " );
+
+//        comp1= new ComboBox<String>();
+//        comp1.setItems(compo1);
+    }
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws Exception {
@@ -33,19 +42,25 @@ public class Controller implements Initializable {
         Parent root;
 
         if (event.getSource() == btn1) {
+
             stage = (Stage) btn1.getScene().getWindow();
+            stage.setTitle("Composant");
+//            fillCombo();
+//            stage.setScene();
+//            fillCombo();
             URL url = new File("src/main/resources/fxml/qcl.fxml").toURI().toURL();
             root = FXMLLoader.load(url);
+
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            fillCombo();
             stage.show();
         }
-
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        comb.setItems(list);
+
     }
 
 }

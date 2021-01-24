@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="checkList" />
+        <module name="checkListsKopie" />
+        <module name="checkLists - Kopie" />
       </profile>
     </annotationProcessing>
   </component>
