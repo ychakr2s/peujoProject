@@ -22,7 +22,8 @@ public class Controller implements Initializable {
      */
     @FXML
     private Button btn1;
-
+    @FXML
+    private TextArea date;
 
     //    public ComboBox<String> comp1;
 
@@ -57,6 +58,11 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+            DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Calendar cal = Calendar.getInstance();
+
+        System.out.println(dateFormat.format(cal.getTime()));
+        date.setText(dateFormat.format(cal.getTime()));
 
     }
 
