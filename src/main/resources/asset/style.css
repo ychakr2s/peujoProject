@@ -1,9 +1,14 @@
 /*.listviewBackground {*/
 /*    background-color: #FFF;*/
 /*}*/
-.date {
-    /*-fx-border-color: #000;*/
-    /*-fx-padding: 10px 10px 10px 10px;*/
+.contDate {
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+}
+
+.contshift {
+    -fx-text-alignment: center;
+    -fx-padding: 0px 0px 50% 0px;
 }
 
 .suivant {
@@ -59,11 +64,13 @@
     -fx-font-weight: 700;
     -fx-text-fill: #2f2626
 }
+
 .compoValue {
     -fx-font-size: 16;
     -fx-font-weight: 700;
     /*-fx-text-alignment: right;*/
 }
+
 /*.combo-box .cell:selected{*/
 /*    -fx-text-fill: red;*/
 /*    -fx-background-color: #394889;*/
