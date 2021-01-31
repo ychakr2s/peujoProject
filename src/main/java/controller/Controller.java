@@ -35,10 +35,12 @@ public class Controller implements Initializable {
     private TextArea conShift;
     @FXML
     private TextArea gravure;
+
     @FXML
-    private ComboBox controleurControl;
+    private ComboBox<String> controleurControl;
     ObservableList<String> control = FXCollections.observableArrayList("Mounia", "Hanane", "Fatimazehra", "Wissal",
             "Imane", "Ouassima", "Zineb", "Najlae", "Ali", "Brahim", "Mouhamed");
+
     private String selectedControleur = "";
 
     public void fillCombo() {
@@ -54,7 +56,6 @@ public class Controller implements Initializable {
             if (gravure.getText().equals("")) {
                 System.out.println("alles ist leeer" + gravure.getText());
             }
-//            System.out.println("alles ist leeer" + gravure.getText());
 
             stage = (Stage) btn1.getScene().getWindow();
             stage.setTitle("Composant");
@@ -104,23 +105,14 @@ public class Controller implements Initializable {
     public String getSelectedControleur() {
         final String[] value = {""};
         final String[] selectedItem = {""};
-        // get the Selected Item,which the User put it.
-//        for (int i = 0; i < 22; i++) {
-//            int finalI = i;
-//            int finalI1 = i;
         controleurControl.getSelectionModel().selectedItemProperty()
                 .addListener(new ChangeListener<String>() {
                     public void changed(ObservableValue<? extends String> observable,
                                         String oldValue, String newValue) {
-//                            System.out.println(finalI + " Value is: " + newValue);
                         selectedControleur = newValue;
                         System.out.println(" " + selectedControleur);
-//                        selectedItem[0] = value[0];
-//                        System.out.println(" " + value[0]);
-//                            value[finalI] = newValue;
                     }
                 });
-//        }
         System.out.println(" saasa " + selectedControleur);
         return selectedControleur;
     }
