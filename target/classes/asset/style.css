@@ -71,6 +71,11 @@
     /*-fx-text-alignment: right;*/
 }
 
+.combControleur {
+    -fx-font-size: 17;
+    -fx-font-weight: 600;
+}
+
 /*.combo-box .cell:selected{*/
 /*    -fx-text-fill: red;*/
 /*    -fx-background-color: #394889;*/

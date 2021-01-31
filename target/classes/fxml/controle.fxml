@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
@@ -30,10 +31,10 @@
         <TextArea fx:id="gravure" layoutX="654.0" layoutY="296.0" prefHeight="57.0" prefWidth="170.0" />
         <Label layoutX="512.0" layoutY="300.0" prefHeight="51.0" prefWidth="125.0" style="-fx-font-size: 35;" text="Gravure" />
         <Button fx:id="btn1" layoutX="513.0" layoutY="598.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="74.0" prefWidth="324.0" style="-fx-font-size: 24px;" styleClass="suivant" stylesheets="@../asset/style.css" text="Commencer le Controle" />
-        <TextArea fx:id="controleur" layoutX="288.0" layoutY="440.0" prefHeight="57.0" prefWidth="170.0" />
         <Label layoutX="61.0" layoutY="440.0" prefHeight="57.0" prefWidth="170.0" style="-fx-font-size: 35;" text="Controleur" />
       <Label layoutX="512.0" layoutY="440.0" prefHeight="41.0" prefWidth="100.0" style="-fx-font-size: 35;" text="Status" />
       <TextArea fx:id="status" layoutX="654.0" layoutY="440.0" prefHeight="57.0" prefWidth="170.0" />
       <TextArea fx:id="chassis" layoutX="288.0" layoutY="296.0" prefHeight="57.0" prefWidth="170.0" />
+      <ComboBox fx:id="controleurControl" layoutX="288.0" layoutY="440.0" prefHeight="57.0" prefWidth="170.0" promptText="Name" styleClass="combControleur" stylesheets="@../asset/style.css" />
     </children>
 </Pane>

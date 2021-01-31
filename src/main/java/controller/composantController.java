@@ -24,74 +24,74 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class composantController implements Initializable {
-    private ArrayList<ComboBox> ArrayListCombo;
+    private ArrayList<ComboBox<String>> ArrayListCombo;
     private String[] selectedItem = new String[22];
     @FXML
-    private ComboBox comp1;
-    ObservableList compo1 = FXCollections.observableArrayList("0", "OK", "M", "R");
+    private ComboBox<String> comp1;
+    ObservableList<String> compo1 = FXCollections.observableArrayList("0", "OK", "M", "R");
 
     @FXML
-    private ComboBox comp2;
+    private ComboBox<String> comp2;
     ObservableList<String> compo2 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp3;
+    private ComboBox<String> comp3;
     ObservableList<String> compo3 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp4;
+    private ComboBox<String> comp4;
     ObservableList<String> compo4 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp5;
+    private ComboBox<String> comp5;
     ObservableList<String> compo5 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp6;
+    private ComboBox<String> comp6;
     ObservableList<String> compo6 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp7;
+    private ComboBox<String> comp7;
     ObservableList<String> compo7 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp8;
+    private ComboBox<String> comp8;
     ObservableList<String> compo8 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp9;
+    private ComboBox<String> comp9;
     ObservableList<String> compo9 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp10;
+    private ComboBox<String> comp10;
     ObservableList<String> compo10 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp11;
+    private ComboBox<String> comp11;
     ObservableList<String> compo11 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp12;
+    private ComboBox<String> comp12;
     ObservableList<String> compo12 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp13;
+    private ComboBox<String> comp13;
     ObservableList<String> compo13 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp14;
+    private ComboBox<String> comp14;
     ObservableList<String> compo14 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp15;
+    private ComboBox<String> comp15;
     ObservableList<String> compo15 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp16;
+    private ComboBox<String> comp16;
     ObservableList<String> compo16 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp17;
+    private ComboBox<String> comp17;
     ObservableList<String> compo17 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp18;
+    private ComboBox<String> comp18;
     ObservableList<String> compo18 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp19;
+    private ComboBox<String> comp19;
     ObservableList<String> compo19 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp20;
+    private ComboBox<String> comp20;
     ObservableList<String> compo20 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp21;
+    private ComboBox<String> comp21;
     ObservableList<String> compo21 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
     @FXML
-    private ComboBox comp22;
+    private ComboBox<String> comp22;
     ObservableList<String> compo22 = FXCollections.observableArrayList("0", "OK", "M", "R", "S", "F", "2S", "2F");
 
     @FXML
@@ -99,6 +99,9 @@ public class composantController implements Initializable {
 
     @FXML
     private TextField showMessage;
+
+    @FXML
+    private Button composantRetoucher;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -125,13 +128,13 @@ public class composantController implements Initializable {
         comp21.setItems(compo21);
         comp22.setItems(compo22);
 
-        for (ComboBox com : getArrayListCombo()) {
+        for (ComboBox<String> com : getArrayListCombo()) {
             generalComp(com);
         }
         getSelectedValue();
     }
 
-    public ArrayList<ComboBox> getArrayListCombo() {
+    public ArrayList<ComboBox<String>> getArrayListCombo() {
         ArrayListCombo = new ArrayList<>();
 
         ArrayListCombo.add(comp1);
@@ -160,14 +163,14 @@ public class composantController implements Initializable {
         return this.ArrayListCombo;
     }
 
-    // This Methode shorts call of Methods
-    public void generalComp(ComboBox comb) {
+    // This Methode shorts call of Methods (select the right color and colors the Backgound of the selected status)
+    public void generalComp(ComboBox<String> comb) {
         selectColor(comb);
         setColor(comb);
     }
 
-    // This Method sets Color
-    public void setColor(ComboBox comp) {
+    // This Method sets Color and colors each status with deferent color.
+    public void setColor(ComboBox<String> comp) {
         comp.buttonCellProperty().bind(Bindings.createObjectBinding(() -> {
             final Color finalColor = selectColor(comp);
 
@@ -195,8 +198,8 @@ public class composantController implements Initializable {
         }, comp.valueProperty()));
     }
 
-    // This Method select Colors
-    public Color selectColor(ComboBox comb) {
+    // This Method select the intended and suitable Colors
+    public Color selectColor(ComboBox<String> comb) {
         int indexOf = comb.getItems().indexOf(comb.getValue());
 
         Color color = Color.TRANSPARENT;
@@ -230,36 +233,34 @@ public class composantController implements Initializable {
     }
 
     /*
-     ** This Method get the selected Value from User and saved in an ArrayList
+     ** This Method gets the selected Status from User and saved in an ArrayList
      */
     public String[] getSelectedValue() {
-        final String[] value = new String[22];
-        // get the Selected Item,which the User put it.
+
+        // get the Selected Item, which the User put it.
         for (int i = 0; i < 22; i++) {
             int finalI = i;
-            int finalI1 = i;
             getArrayListCombo().get(i).getSelectionModel().selectedItemProperty()
                     .addListener(new ChangeListener<String>() {
                         public void changed(ObservableValue<? extends String> observable,
                                             String oldValue, String newValue) {
                             System.out.println(finalI + " Value is: " + newValue);
-                            value[finalI] = newValue;
                             selectedItem[finalI] = newValue;
                         }
                     });
         }
-
         return selectedItem;
     }
 
+    // This Method saves and validate the Status of the checked Composants
     @FXML
     public void ValidSave(ActionEvent event) throws Exception {
         if (event.getSource() == compValEnr) {
 
             if (isAllSelected()) {
-                showMessage.setText("oui tout est sélectionné");
+                showMessage.setText("oui tout est selectionne");
             } else {
-                showMessage.setText("Tout n'est pas sélectionné");
+                showMessage.setText("Tout n'est pas selectionne");
             }
         }
     }
