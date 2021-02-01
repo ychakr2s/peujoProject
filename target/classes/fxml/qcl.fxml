@@ -849,7 +849,7 @@
                 </AnchorPane>
             </children>
         </FlowPane>
-        <Button fx:id="compEnr" layoutX="22.0" layoutY="3095.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" stylesheets="@../asset/style.css" text="Retoucher">
+        <Button fx:id="composantRetoucher" layoutX="22.0" layoutY="3095.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" stylesheets="@../asset/style.css" text="Retoucher">
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </padding>

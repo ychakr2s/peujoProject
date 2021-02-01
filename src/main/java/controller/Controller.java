@@ -94,7 +94,7 @@ public class Controller implements Initializable {
 
     private static String getStartDate() {
         Date date = new Date();
-        SimpleDateFormat formater = new SimpleDateFormat("dd.MM.yyyy  hh:mm");
+        SimpleDateFormat formater = new SimpleDateFormat("dd.MM.yyyy");
         String formatedDate = formater.format(date);
         return formatedDate;
     }
@@ -103,17 +103,13 @@ public class Controller implements Initializable {
      * This Method gets the selected Controleur
      */
     public String getSelectedControleur() {
-        final String[] value = {""};
-        final String[] selectedItem = {""};
         controleurControl.getSelectionModel().selectedItemProperty()
                 .addListener(new ChangeListener<String>() {
                     public void changed(ObservableValue<? extends String> observable,
                                         String oldValue, String newValue) {
                         selectedControleur = newValue;
-                        System.out.println(" " + selectedControleur);
                     }
                 });
-        System.out.println(" saasa " + selectedControleur);
         return selectedControleur;
     }
 }

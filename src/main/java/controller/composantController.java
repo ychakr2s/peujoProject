@@ -268,7 +268,7 @@ public class composantController implements Initializable {
     // check whether all of Values are selected
     public Boolean isAllSelected() {
         for (String arr : getSelectedValue()) {
-            if (arr == null || arr == "0") {
+            if (null == arr || arr == "0") {
                 System.out.println("nulllll lll");
                 return false;
             }
